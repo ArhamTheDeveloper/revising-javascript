@@ -4,6 +4,8 @@ var userName = "Arham";
 userAge = 18;
 let accountState;
 
+console.log(accountState);
+
 console.table([userId, userEmail, userName, userAge, accountState]);
 
 /*
