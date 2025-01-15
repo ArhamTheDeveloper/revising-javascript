@@ -4,7 +4,8 @@
 
 // alert(3+3) // we are using nodeJS, not browser
 
-// Code readability should be high priority // code readable bhi hona chahiye and future proof bhi
+// Code readability should be high priority // code readable bhi hona chahiye and future proof bhi. // confusing code nhi likhne ka write clean simple and readable code.
+// coding main readability sab se zaroori cheez hai
 
 /* So DataTypes in JS
 Mainly 2 groups : Primitives and Non Primitives 
