@@ -71,3 +71,5 @@ console.log(gameCounter);
 
 
 // Interesting conversation about conversion : https://chatgpt.com/c/6787e311-2740-800b-9249-7de764c41db6
+
+// About pre and post increment: https://chatgpt.com/c/6787e8cc-1c5c-800b-8eec-57a38ead33d6 (Assignment done)
