@@ -1,5 +1,7 @@
 "use strict"; // this line treats all JS code even if its of the older version as newer version
 
+// a strict mode that provides enhanced error checking and program security read it in the ecmascript specification.
+
 // alert(3+3) // we are using nodeJS, not browser
 
 // Code readability should be high priority // code readable bhi hona chahiye and future proof bhi
