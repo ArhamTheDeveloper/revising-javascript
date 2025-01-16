@@ -67,9 +67,10 @@ console.log(gameCounter);
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
 
-// And sir aik video ki baat karhe the apne english wale channel pe
-
 
 // Interesting conversation about conversion : https://chatgpt.com/c/6787e311-2740-800b-9249-7de764c41db6
 
 // About pre and post increment: https://chatgpt.com/c/6787e8cc-1c5c-800b-8eec-57a38ead33d6 (Assignment done)
+
+
+// All types of operators in JS : https://chatgpt.com/c/6787f0ab-d1e8-800b-947c-f3ac81be6a27
