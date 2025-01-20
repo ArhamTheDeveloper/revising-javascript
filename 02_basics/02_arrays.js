@@ -18,7 +18,7 @@ const dc_heroes = ["batman", "flash", "superman"];
 
 
 console.log((Array.isArray("Zoro")));
-console.log(Array.from("Zoro"));
+console.log(Array.from("Zoro",((e)=>{return e+"z"})));
 console.log(Array.from({color:"blue"})); // interesting
 
 let num1 = 100;
