@@ -1,4 +1,4 @@
-// This is function definition
+// This is function definition / "FUNCTION DECLARATION"
 // function definition ka aik rule which is ke aik dafa function ne koi value return kardi to uske baad function koi kaam nhi karega
 function sayMyName() {
   console.log("H");
