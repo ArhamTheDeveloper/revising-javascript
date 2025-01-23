@@ -75,8 +75,7 @@ function addNumbers(a, b, c) {
     let answer = a + b;
     return answer;
   }
- return addTwoNumbers(a, b) + c;
-  
+  return addTwoNumbers(a, b) + c;
 }
 
 console.log(addNumbers(2, 3, 4));
