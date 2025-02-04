@@ -1,0 +1,55 @@
+<!-- **** What is DOM : https://chat.deepseek.com/a/chat/s/567cb530-7631-4c9f-abcc-0ba9dbcf24b9 -->
+<!-- https://www.youtube.com/watch?v=DcjNkHtDj8A&list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37&index=36 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>DOM learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
+</head>
+<body class="bg-black">
+    <div >
+        <h1  id="title" class="heading">DOM learning on Chai aur code <span style="display: none;">test text</span></h1>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <input type="password" name="" id="">
+
+        <ul>
+            <li class="list-item">one</li>
+            <li class="list-item">two</li>
+            <li class="list-item">three</li>
+            <li class="list-item">four</li>
+        </ul>
+    </div>
+</body>
+</html>
+
+<!--
+****  DOM Element Selectors 
+getElementById()
+getElementsByClassName() {returns an html collection and it does not have a forEach method}
+getElementsByTagName()
+querySelector() // querySelector can select elements using any valid CSS selector
+querySelectorAll() {returns a nodeList and this nodeList has a forEach method}
+
+****  DOM Element properties and methods 
+.id, .className, .getAttribute(), .getAttributeNames,
+.setAttribute('class','container test') setattribute always overrides the attribute you are setting if u wanna add two classes then you gotta give it too,
+.style.color = 'blue', .style.padding = "15px",
+
+****  Element ka content nikalne ke props and methods 
+.innerText, .textContent, .innerHTML, 
+So innerText kisi bhi element ka visible text show karta hai while textContent kisi element ka hidden text bhi show kar sakta hai
+aur innerHTML aap ko kisi element ke text ke saaath saath agar us element main koi aur children/html bbhi likhi hui hai to wo html bhi show hojati hai 
+-->
+
+<!-- NodeList and Html Collection : https://chatgpt.com/c/67a0c00b-cea0-800b-a19f-f5453f882700 -->
