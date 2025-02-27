@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub Profile Card</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .card {
+        background: #333;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        width: 250px;
+        box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+      }
+      .card img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+      }
+      .btn {
+        margin-top: 10px;
+        padding: 10px;
+        background-color: #008cba;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      .btn:hover {
+        background-color: #005f7a;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      const requestUrl = "https://api.github.com/users/hiteshchoudhary";
+      const xhr = new XMLHttpRequest();
+
+      xhr.open("GET", requestUrl);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4) {
+          const data = JSON.parse(xhr.responseText);
+          createCard(data);
+        }
+      };
+      xhr.send();
+
+      function createCard(data) {
+        // Create card element
+        const card = document.createElement("div");
+        card.classList.add("card");
+
+        // Create image element
+        const img = document.createElement("img");
+        img.src = data.avatar_url;
+        img.alt = "Profile Picture";
+
+        // Create button
+        const button = document.createElement("button");
+        button.classList.add("btn");
+        button.innerText = "Show Followers";
+
+        // Create followers count placeholder
+        const followersText = document.createElement("p");
+        followersText.innerText = "";
+
+        // Button click event
+        button.addEventListener("click", function () {
+          followersText.innerText = `Followers: ${data.followers}`;
+        });
+
+        // Append elements to card
+        card.appendChild(img);
+        card.appendChild(button);
+        card.appendChild(followersText);
+
+        // Append card to body
+        document.body.appendChild(card);
+      }
+    </script>
+  </body>
+</html>
+
+
+<!-- 0 UNSENT Client has been created. open() not called yet. 1 OPENED open() has
+been called. 2 HEADERS_RECEIVED send() has been called, and headers and
+status are available. 3 LOADING Downloading; responseText holds partial
+data. 4 DONE The operation is complete.
+
+const button = document.createElement("button");
+button.innerHTML = "Click Here to see Magic!!!";
+
+const div = document.createElement("div");
+const text = (document.createTextNode = "Hi I am a div");
+div.append(text);
+div.style.cssText = `
+width: 200px;
+height: 200px;
+background-color: black;
+color: white;
+margin:auto`;
+document.body.append(div, button);
+
+button.addEventListener("click", (e) => {
+  div.innerHTML = `<img src="${data.avatar_url}" height="150px" 
+  width="200px"/> 
+   Sir's Followers are: ${data.followers}
+  `;
+}); -->
